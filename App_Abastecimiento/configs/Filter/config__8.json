@@ -1,0 +1,117 @@
+{
+  "taskOper": "OR",
+  "groupByLayer": false,
+  "zoomto": false,
+  "zoombackto": false,
+  "allowCustom": false,
+  "allowResetAll": false,
+  "allowTurnOffAll": false,
+  "filters": [
+    {
+      "layerId": "Red_Abastecimiento_2705",
+      "url": "https://services3.arcgis.com/Jk67jiFImWA5DUok/arcgis/rest/services/Red_Abastecimiento/FeatureServer/2",
+      "name": "Red_Abastecimiento - Válvulas",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "Tipo",
+              "label": "Tipo",
+              "dateFormat": "",
+              "shortType": "number",
+              "type": "esriFieldTypeSmallInteger"
+            },
+            "operator": "numberOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value": 2
+            },
+            "interactiveObj": "",
+            "caseSensitive": false,
+            "displaySQL": "Tipo = 2",
+            "expr": "Tipo = 2"
+          }
+        ],
+        "expr": "Tipo = 2",
+        "displaySQL": "Tipo = 2"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": false,
+      "collapse": false,
+      "symbol": {
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriPMS",
+        "url": "http://static.arcgis.com/images/Symbols/Basic/RedBeacon.png",
+        "imageData": "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",
+        "contentType": "image/png",
+        "width": 18,
+        "height": 18
+      }
+    },
+    {
+      "layerId": "Red_Abastecimiento_2705",
+      "url": "https://services3.arcgis.com/Jk67jiFImWA5DUok/arcgis/rest/services/Red_Abastecimiento/FeatureServer/2",
+      "name": "Red_Abastecimiento - Válvulas",
+      "filter": {
+        "logicalOperator": "AND",
+        "parts": [
+          {
+            "fieldObj": {
+              "name": "Tipo",
+              "label": "Tipo",
+              "dateFormat": "",
+              "shortType": "number",
+              "type": "esriFieldTypeSmallInteger"
+            },
+            "operator": "numberOperatorIs",
+            "valueObj": {
+              "isValid": true,
+              "type": "value",
+              "value": 1
+            },
+            "interactiveObj": "",
+            "caseSensitive": false,
+            "displaySQL": "Tipo = 1",
+            "expr": "Tipo = 1"
+          }
+        ],
+        "expr": "Tipo = 1",
+        "displaySQL": "Tipo = 1"
+      },
+      "icon": null,
+      "enableMapFilter": true,
+      "autoApplyWhenWidgetOpen": false,
+      "collapse": false,
+      "symbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      }
+    }
+  ]
+}
